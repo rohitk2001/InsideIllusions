@@ -1,0 +1,429 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+}
+
+/*header write your code here*/
+
+.header{
+height: 100vh;
+  background: linear-gradient(to right bottom, #76c768cc, #2eb688c7),
+  url("../images/teamA/bg.jpg");
+
+background-size: cover;
+}
+
+
+
+
+/*nava bar*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.navbar .navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.6rem;
+  font-weight: bold;
+  animation: yourAnimation2 2s forwards 7s ease;
+}
+
+@keyframes yourAnimation2 {
+  0% {
+    transform: rotate(0) translateX(-30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  height: 55px;
+  width: 90px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: bold;
+  text-align: left;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+/* title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/*search*/
+::placeholder{
+  color: #fff;
+}
+.search {
+  width: 130px;
+   box-sizing: border-box;
+float: right;
+  border: 2px solid #fff;
+  border-radius: 5px;
+ font-size: 16px;
+  background-color: transparent;
+  background-image: url('../images/teamA/search.png');
+  background-position: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.search:focus {
+  width: 100%;
+    border: 2px solid #fff;
+
+}
+/*container write your code here*/
+.containers{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+
+.bootimg{
+  width:1400px;
+  height:650px;
+}
+.carousel-item  h5{
+  color:   #cbaf87;
+  border-radius: 130px;
+  background: #333;
+  width: 60%;
+  font-size: 2rem;
+  font-weight: 400;
+
+}
+.images {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*testimonial write your code here */
+.checked {
+  color: orange;
+}
+
+
+.testimonials {
+  padding: 40px 0;
+  background: grey;
+  background-image: url("https://img.freepik.com/free-photo/modern-workspace-with-futuristic-background_23-2148327021.jpg?size=626&ext=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.inner h1{
+  color: #fff;
+}
+.border {
+  width: 160px;
+  height: 5px;
+  background: #cbaf87;
+  margin: 26px auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 30px;
+}
+
+.testimonial .img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.stars {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/*contact write your code here */
+.contact {
+  height: auto;
+  background-image: url("../images/teamD/Living Room.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact h1 {
+  font-size: 50px;
+  padding: 50px 50px 0 50px;
+}
+
+.contact b#b1 {
+  color: #cbaf87;
+  font-size: 20px;
+}
+
+.contact p {
+  padding: 20px;
+}
+
+input,
+textarea {
+  width: 300px;
+  padding: 8px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid 2px rgba(238, 238, 238, 0.363);
+  border-radius: 5px;
+  transition: 0.5s;
+  outline: none;
+  margin: 0 8px 20px 8px;
+}
+
+input#address {
+  width: 620px;
+}
+
+textarea {
+  width: 620px;
+  height: 130px;
+}
+
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
+  border: solid 2px #cbaf87;
+}
+
+button {
+  width: 200px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #cbaf87;
+  border: solid 2px #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+  margin: 0 8px 55px 8px;
+  transition: width 1s, height 1s, transform 1s;
+}
+
+button b {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button b:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover b {
+  padding-right: 15px;
+}
+
+button:hover b:after {
+  opacity: 1;
+  right: 0;
+}
+
+button:hover {
+  background: transparent;
+  color: #cbaf87;
+  border: solid 2px #cbaf87;
+  transition: 0s;
+  width: 220px;
+}
+
+.info {
+  line-height: 2.5;
+}
+
+.lnr {
+  color: #cbaf87;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #cbaf87;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width:800px) {
+
+  /* For Tablets: */
+  input#address {
+    width: 450px;
+  }
+
+  textarea {
+    width: 450px;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+
+  /* For Mobile Phones: */
+  input#address {
+    width: 300px;
+  }
+
+  textarea {
+    width: 300px;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width:300px) {
+
+  input,
+  input#address,
+  textarea {
+    width: 250px;
+  }
+}
+
+
+/*footer write your code here */
+.footer{
+  background: #fff;
+   text-align: center;
+
+}
+.footer p {
+  color: #8f8f8f;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+.social {
+  margin: 20px 20px;
+  font-size: 1.5rem;
+}
+
+.blackf {
+  color: #333;
+}
+
+.blackf:hover {
+  color: #4267B2;
+}
+
+.blackt {
+  color: #333;
+}
+
+.blackt:hover {
+  color: #1DA1F2;
+}
+
+.blacki {
+  color: #333;
+}
+
+.blacki:hover {
+  color: #C13584;
+}
+
+.blackm {
+  color: #333;
+}
+
+.blackm:hover {
+  color: #DB4437;
+}
